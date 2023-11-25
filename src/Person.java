@@ -12,5 +12,14 @@ public class Person {
         int age = currentDate.getYear() - birthday.getYear();
         return age;
     }
-
+    public String getName(){return name;}
+    public LocalDate getBirthday(){return birthday;}
+    @Override
+    public String toString(){
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday + '\'' +
+                ", age='" + getAge() + '\'' +
+                '}';
+    }
 }
